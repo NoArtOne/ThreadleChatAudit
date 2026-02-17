@@ -1,0 +1,100 @@
+﻿# --- Go ---
+# Бинарные файлы, созданные в процессе разработки
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+threadle
+
+# Файлы профайлинга
+*.prof
+*.pprof
+
+# Кэш сборки (введен в Go 1.10+)
+/pkg/mod/
+
+# Зависимости модулей (go.sum обычно коммитят, но можно игнорировать для приватных проектов)
+# go.sum 
+
+# --- Конфигурация и Секреты ---
+# Файлы окружения с секретами
+.env
+.env.local
+.env.*.local
+
+# Конфигурационные файлы с токенами
+config.json
+secrets.json
+
+# --- База Данных ---
+# SQLite файлы базы данных
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+/data/
+
+# --- LLM Модели ---
+# Файлы моделей обычно весят несколько ГБ
+*.gguf
+*.bin
+*.pt
+*.pth
+/models/
+
+# --- Docker ---
+# Файлы Docker Compose для локальной разработки (если не нужны в репо)
+# docker-compose.override.yml
+
+# Томы Docker
+.docker/
+
+# --- Логи ---
+*.log
+logs/
+
+# --- IDE и Редакторы ---
+# VS Code
+.vscode/
+*.code-workspace
+
+# GoLand / JetBrains
+.idea/
+*.iml
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+.netrwhist
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# --- ОС ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# --- Временные файлы ---
+tmp/
+temp/
+*.tmp
+*.bak
